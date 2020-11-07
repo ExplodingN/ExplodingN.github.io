@@ -6,7 +6,7 @@ function Snake(){
 
 
 	this.draw = function(){
-		ctx.fillStyle - "#FFFFFF";
+		ctx.fillStyle = "#FFFFFF";
 		ctx.fillRect(this.x,this.y,scale,scale);
 	}
 
