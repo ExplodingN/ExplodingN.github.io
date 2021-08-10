@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <meta name="google-site-verification" content="UjgZEtTi5kbbt6UNM9pWd8WMtaHv4vkMFZPl3T73tgc" />
+      <meta name="description" content="The official website of Voxelphilos." />
+</head>
+<style>
+  @font-face {
+    font-family: 'titleFont';
+    src: url('Fonts/Title.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+  .Members {
+    position: absolute; 
+    width:300px; 
+    height:100px; 
+    top:100px; 
+    left:1600px;
+  }
+  @font-face{
+    font-family: 'regularFont';
+    src: url('Fonts/Regular.ttf') format('truetype');
+  }
+</style>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voxelphilos</title>
+  <body style="background-color: #111111" >
+    <font color="green">
+    <h1 style="text-align:center; position: absolute; top: 20px; left: 100px; font-family:titleFont;font-color=#98FF98;"; >Voxelphilos</h1>
+    <img src="Images/voxellogo.png" style="position: static; top: 0px;"></img>
+    <font color="grey" style="font-family:regularFont" >
+    <h2 id="MembersButton"style="position: absolute; top:50px; left:1550px">Members of Voxelphilos ▲</h2>
+    <div id="Members" class="Members" style="Visibility:hidden">
+        <h2>Ziyrm - Owner</h2>
+        <h2>Egroce - Programmer</h2>
+        <h2>ExplodingN - Programmer</h2>
+        <h2>Zeptitan - Modeler</h2>
+        <h2>Recyclxd - Modeler</h2>
+        <h2>Muntis - Artist</h2>
+        <h2>K30D2 - Animator</h2>
+        <h2>Mr.Saltz - Modeler</h2>
+    </div>
+  </body>
+  <script>
+    var membersButton = document.getElementById('MembersButton')
+    var members = document.getElementById('Members')
+    var opened = false
+    membersButton.onclick = function() {
+        if(opened){
+            members.style.visibility = "hidden"
+            membersButton.innerHTML = "Members of Voxelphilos ▲"
+            opened = false
+            console.log("Closed")
+        }else{
+            members.style.visibility = "visible"
+            membersButton.innerHTML = "Members of Voxelphilos ▼"
+            opened = true
+            console.log("Opened")
+        }
+    };
+  </script>
+</html>
