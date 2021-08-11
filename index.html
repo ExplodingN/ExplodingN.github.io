@@ -11,39 +11,51 @@
     font-style: normal;
 
   }
+    html {height:100%; overflow:hidden}
+    body {height: 100%;}
   .Members {
     position: absolute; 
-    width:300px; 
-    height:100px; 
-    top:100px; 
-    left:1600px;
+    width:30%; 
+    height:20%; 
+    top:10%; 
+    left:82%;
   }
   @font-face{
     font-family: 'regularFont';
     src: url('Fonts/Regular.ttf') format('truetype');
   }
+  h2{
+    font-size: 2.5vh;
+  }
 </style>
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voxelphilos</title>
-  <body style="background-color: #111111" >
-    <font color="green">
-    <h1 style="text-align:center; position: absolute; top: 20px; left: 100px; font-family:titleFont;font-color=#98FF98;"; >Voxelphilos</h1>
-    <img src="Images/voxellogo.png" style="position: static; top: 0px;"></img>
-    <font color="grey" style="font-family:regularFont" >
-    <h2 id="MembersButton"style="position: absolute; top:50px; left:1550px">Members of Voxelphilos ▲</h2>
-    <div id="Members" class="Members" style="Visibility:hidden">
-        <h2>Ziyrm - Owner</h2>
-        <h2>Egroce - Programmer</h2>
-        <h2>ExplodingN - Programmer</h2>
-        <h2>Zeptitan - Modeler</h2>
-        <h2>Recyclxd - Modeler</h2>
-        <h2>Muntis - Artist</h2>
-        <h2>K30D2 - Animator</h2>
-        <h2>Mr.Saltz - Modeler</h2>
-    </div>
-  </body>
+  <div id="Content">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Voxelphilos</title>
+      <body style="background-color: #111111" >
+        <font color="green">
+        <h1 style="text-align:center; position: absolute; top: 2%; left: 5%; font-size: 4vh; font-family:titleFont;font-color=#98FF98;"; >Voxelphilos</h1>
+        <img src="Images/voxellogo.png" style="position: static; width:12vh;"></img>
+        <font color="grey" style="font-family:regularFont" >
+        <h2 id="MembersButton"style="position: absolute; top:5%; left:80%">Members of Voxelphilos ▲</h2>
+        <div id="Members" class="Members" style="Visibility:hidden">
+            <h2>Ziyrm - Owner</h2>
+            <h2>Egroce - Programmer</h2>
+            <h2>ExplodingN - Programmer</h2>
+            <h2>Zeptitan - Modeler</h2>
+            <h2>Recyclxd - Modeler</h2>
+            <h2>Muntis - Artist</h2>
+            <h2>K30D2 - Animator</h2>
+            <h2>Mr.Saltz - Modeler</h2>
+        </div>
+      </body>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script>
+    $(window).on('load resize', function(){
+        console.log("siondg")
+        $('#Content').width($(this).width());
+    });
     var membersButton = document.getElementById('MembersButton')
     var members = document.getElementById('Members')
     var opened = false
@@ -61,4 +73,5 @@
         }
     };
   </script>
+
 </html>
