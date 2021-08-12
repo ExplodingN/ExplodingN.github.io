@@ -36,6 +36,12 @@
     left: 5.5%;
     font-size: 4vh; 
     font-family:titleFont;
+    display:inline-block;
+  }
+  .logo{
+    position: absolute; 
+    left: 0.5%;
+    width:12vh;
   }
   h2{
     font-size: 2.5vh;
