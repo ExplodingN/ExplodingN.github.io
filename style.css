@@ -40,8 +40,9 @@
   }
   .members {
     position: absolute;
-    top: 35%;
-    left: 50%;
+    font-size: 125%;
+    top: 25%;
+    left: 40%;
   }
   .logo{
     position: absolute; 
@@ -53,6 +54,6 @@
     top: 35%;
     left: 50%;
   }
-  h2{
+  h3{
     font-size: 2.5vh;
   }
