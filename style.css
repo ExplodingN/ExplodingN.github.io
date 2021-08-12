@@ -12,12 +12,12 @@
     src: url('Fonts/Regular.ttf') format('truetype');
   }
   .socialLink{
-    font-size:2.7vh;
+    font-size:150%;
     text-decoration: none;
     color: grey;
   }
   .link{
-    font-size:2.7vh;
+    font-size:175%;
     text-decoration: none;
     color: grey;
   }
@@ -34,14 +34,24 @@
     position: absolute; 
     top: 4.5%;
     left: 5.5%;
-    font-size: 4vh; 
+    font-size: 175%; 
     font-family:titleFont;
     display:inline-block;
+  }
+  .members {
+    position: absolute;
+    top: 35%;
+    left: 50%;
   }
   .logo{
     position: absolute; 
     left: 0.5%;
-    width:12vh;
+    width:5.5%;
+  }
+  .games{
+    position: absolute;
+    top: 35%;
+    left: 50%;
   }
   h2{
     font-size: 2.5vh;
