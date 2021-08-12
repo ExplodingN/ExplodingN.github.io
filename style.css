@@ -1,9 +1,32 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+  @font-face {
+    font-family: 'titleFont';
+    src: url('Fonts/Title.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 
-body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
-}
+  }
+    html {height:100%; overflow:hidden}
+    body {height: 100%;}
+  @font-face{
+    font-family: 'regularFont';
+    src: url('Fonts/Regular.ttf') format('truetype');
+  }
+  .socialLink{
+    font-size:2.7vh;
+    text-decoration: none;
+    color: grey;
+  }
+  .link{
+    font-size:2.7vh;
+    text-decoration: none;
+    color: grey;
+  }
+  .list{
+    position: absolute;
+    top: 17%;
+    left: 3.5%;
+    width: 15%;
+  }
+  h2{
+    font-size: 2.5vh;
+  }
